@@ -33,7 +33,7 @@ gem 'coderay'
 gem 'lesstile'
 gem 'formtastic'
 gem 'will_paginate', '= 3.0.pre2'
-
+gem 'cucumber', '~> 1.1.4'
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
 # and rake tasks are available in development mode:
