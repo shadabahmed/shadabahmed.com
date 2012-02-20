@@ -73,6 +73,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
+    newrelic_rpm (3.3.2)
     nokogiri (1.5.0)
     nokogiri (1.5.0-java)
     pg (0.13.1)
@@ -144,6 +145,7 @@ DEPENDENCIES
   formtastic
   jruby-openssl
   lesstile
+  newrelic_rpm
   nokogiri (~> 1.5.0)
   pg
   rack-openid

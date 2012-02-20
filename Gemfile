@@ -9,6 +9,7 @@ platforms :ruby do
   #gem 'sqlite3-ruby', :require => 'sqlite3'
   gem 'pg'
   gem 'dalli'
+  gem 'newrelic_rpm'
 end
 
 platforms :jruby do
