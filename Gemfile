@@ -8,6 +8,7 @@ gem 'rails', '3.0.4'
 platforms :ruby do
   #gem 'sqlite3-ruby', :require => 'sqlite3'
   gem 'pg'
+  gem 'dalli'
 end
 
 platforms :jruby do
