@@ -6,8 +6,7 @@
   <link href='http://fonts.googleapis.com/css?family=Share' rel='stylesheet' type='text/css'>
   <%= csrf_meta_tag %>
   <%= stylesheet_link_tag 'application' %>
-  <%= javascript_include_tag 'jquery' %>
-  <%= javascript_include_tag 'rails' %>
+  <%= javascript_include_tag 'application' %>
   <%= open_id_delegation_link_tags(enki_config[:open_id_delegation, :server], enki_config[:open_id_delegation, :delegate]) if enki_config[:open_id_delegation] %>
   <%= yield(:head) %>
 </head>
