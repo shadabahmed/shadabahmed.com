@@ -1,0 +1,28 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="<%= root_url %>"><%= enki_config[:author][:name] %></a>
+      <ul class="nav">
+        <% page_links_for_navigation.each do |link| -%>
+            <li class="<%= 'active' if current_page?(link.url) %>"><%= link_to(link.name, link.url) %></li>
+         <% end -%>
+      </ul>
+      <ul class="nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <% category_links_for_navigation.each do |link| -%>
+              <li><%= link_to(link.name, link.url) %></li>
+            <% end -%>
+          </ul>
+        </li>
+      </ul>
+      <form method="get" id="sform" action="http://www.google.com/search" class="navbar-search pull-right">
+        <div>
+          <input type="text" id="q" value="" name="q"  class="search-query" placeholder="Search">
+          <input type="hidden" name="sitesearch" value="<%= enki_config[:url] %>">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

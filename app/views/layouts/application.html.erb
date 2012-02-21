@@ -11,6 +11,7 @@
   <%= yield(:head) %>
 </head>
 <body>
+  <%= render 'shared/header' %>
   <div id="page_container">
     <div id="content">
       <h1 id="page_heading"><a href="<%= root_url %>"><%= enki_config[:title] %></a></h1>
@@ -18,7 +19,7 @@
       <div id="main">
         <%= yield %>
       </div>
-
+      <% if false %>
       <div id="navigation">
         <h2>Pages</h2>
         <ul>
@@ -43,7 +44,7 @@
           </div>
         </form>
       </div>
-
+      <% end %>
       <div id="footer"><%= enki_config[:title] %> &#169; <%= enki_config[:author, :name] %>. Valid <a href="http://validator.w3.org/check?uri=referer">HTML5</a> and <%= link_to "ATOM", "http://feedvalidator.org/check.cgi?url=#{enki_config[:url]}/posts.atom" %>. Powered by <a href="http://www.enkiblog.com" title="A Ruby on Rails blogging app for the fashionable developer">Enki</a>.</div>
     </div>
   </div>

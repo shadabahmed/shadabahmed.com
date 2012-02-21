@@ -19,7 +19,7 @@ platforms :ruby do
   gem 'pg'
   gem 'dalli'
   gem 'newrelic_rpm'
-  gem 'less-rails-bootstrap'
+  gem "bootstrap-sass", "~> 2.0.1"
 end
 
 platforms :jruby do

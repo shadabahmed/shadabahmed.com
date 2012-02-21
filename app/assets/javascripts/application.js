@@ -15,3 +15,6 @@
 //= require common
 //= require live-comment-preview
 //= require_self
+// Loads all Bootstrap javascripts
+//= require bootstrap
+
