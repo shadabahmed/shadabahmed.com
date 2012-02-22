@@ -25,6 +25,11 @@ body
   color: #333;
 }
 
+/* Override pre code color in Bootstrap */
+pre code{
+  color: #D14;
+}
+
 #page_container
 {
   position: absolute;
