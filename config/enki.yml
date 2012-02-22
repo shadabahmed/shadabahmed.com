@@ -1,6 +1,7 @@
 # Configuration options for your blog - customise to taste
 # This file contains no secret information, so can be stored in source control (unlike database.yml)
-title: Shadab's Blog!
+title: Shadab's Blog
+subtitle: Musings of a passionate programmer
 url:   http://shadabahmed.com
 author:
   name:    Shadab Ahmed     # For copyright notice and ATOM feeds
