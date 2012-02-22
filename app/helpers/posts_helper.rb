@@ -6,9 +6,11 @@ module PostsHelper
   end
   
   def facebook_like(url)
-    puts '*****************'
-    puts url
-    content_tag :iframe, nil, :src => "http://www.facebook.com/plugins/like.php?href=#{CGI::escape(url)}&layout=standard&show_faces=true&width=450&action=like&font=arial&colorscheme=light&height=80", :scrolling => 'no', :frameborder => '0', :allowtransparency => true, :id => :facebook_like
+    render 'shared/facebook_like', :url => url
+  end
+  
+  def google_plus(url)
+    render 'shared/plus', :url => url
   end
   
 end
