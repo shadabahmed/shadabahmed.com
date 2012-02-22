@@ -2,6 +2,9 @@
 <div class="entrybody">
   <%=raw post.body_html %>
 </div>
+<div class="social_links">
+  <%= facebook_like(post_path(post, :only_path => false).to_s) %>
+</div>
 <div class="meta">
   <ul>
     <li class="date">Posted on <%= format_post_date(post.published_at) %></li>
@@ -11,3 +14,4 @@
     <% end -%>
   </ul>
 </div>
+
