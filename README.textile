@@ -1,4 +1,4 @@
-h1. Shadab's Enki Modification
+h1. Shadab's Enki Fork
 
 This is a fork version from git://github.com/xaviershay/enki.git . I have modified it to heroku-enable it. It now uses postgres instead of sqllite. Also added performance addons like memcacheand and newrelic. 
 
