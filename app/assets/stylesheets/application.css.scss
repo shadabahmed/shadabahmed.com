@@ -109,11 +109,14 @@ h2.entry_title{
   padding: 10px;
   background: white;
   margin: 0 0 15px 0;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.199219) 1px 1px 2px, rgba(0, 0, 0, 0.0976562) 1px 1px 5px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.098);
+  -webkit-box-shadow: 2px 2px rgba(0, 0, 0, 0.199219),2px 2px rgba(0, 0, 0, 0.0976562);
+  -moz-box-shadow: 2px 2px rgba(0, 0, 0, 0.199219),2px 2px rgba(0, 0, 0, 0.0976562);
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.199219),2px 2px rgba(0, 0, 0, 0.0976562);
 }
 
 h2
