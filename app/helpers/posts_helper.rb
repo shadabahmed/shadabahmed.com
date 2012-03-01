@@ -12,5 +12,8 @@ module PostsHelper
   def google_plus(url)
     render 'shared/plus', :url => url
   end
-  
+	
+  def disqus_comments(post)
+    render 'shared/disqus', :id => post.slug
+  end  
 end
