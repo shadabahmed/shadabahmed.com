@@ -13,7 +13,11 @@ module PostsHelper
     render 'shared/plus', :url => url
   end
 	
+  def disqus_comment_count(post)
+    raw "<a href=\"#{post_path(post, :only_path => false)}#disqus_thread\" data-disqus-identifier=\"#{post.slug}\"></a>"
+  end  
+  
   def disqus_comments(post)
-    render 'shared/disqus', :id => post.slug
+    render 'shared/disqus', :post => post
   end  
 end

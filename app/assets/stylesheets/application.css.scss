@@ -12,7 +12,20 @@
  */
 
 /* High level containers */
+@import "_variables";
 @import "bootstrap";
+
+.navbar-search .search-query {
+  background: #DDD;
+  &:hover{
+    background: #fff;
+    }
+}
+
+div.disqus_comment_count{
+  font-size: 10px;
+  float: right;
+}
 
 body
 {
