@@ -19,9 +19,23 @@ $footer_color: #888;
 
 .navbar-search .search-query {
   background: #DDD;
+  color: black;
+  ::-webkit-input-placeholder{
+    color: black;
+  }
+ :-moz-placeholder{
+    color: black;
+  }
   &:hover{
-    background: #fff;
-    }
+    color: black;
+    background-color: #f0f0f0;
+    //background-color: rgba(255, 255, 255, 0.5);
+  }
+  &:focus
+  {
+    color: black;
+    background-color: #fff;
+  }
 }
 
 div.disqus_comment_count{

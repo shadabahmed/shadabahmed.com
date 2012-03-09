@@ -3,7 +3,7 @@ $linkColorHover:        darken($linkColor, 15%);
 
 // Grays
 $black:                 #2C373D;
-$grayDark:              #5C6263; 
+$grayDark:              #50A8DC; 
 $grayDarker:            darken($grayDark, 10%);
 $gray:                  #778890;
 $grayLight:             #A09F9B;
@@ -14,8 +14,8 @@ $navbarHeight:                    40px;
 $navbarBackground:                $grayDarker;
 $navbarBackgroundHighlight:       $grayDark;
 
-$navbarText:                      $grayLight;
-$navbarLinkColor:                 $grayLight;
+$navbarText:                      #f0f0f0;
+$navbarLinkColor:                 #f4f4f4;
 $navbarLinkColorHover:            $white;
 /*
 
