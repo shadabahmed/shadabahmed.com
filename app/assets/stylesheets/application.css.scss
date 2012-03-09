@@ -15,6 +15,8 @@
 @import "_variables";
 @import "bootstrap";
 
+$footer_color: #888;
+
 .navbar-search .search-query {
   background: #DDD;
   &:hover{
@@ -68,7 +70,7 @@ pre code{
   padding-right: 15px;
   padding-bottom: 5px;
   padding-left: 5px;
-  color: gray;
+  color: $footer_color;
 /*  border-bottom: solid 1px #aaaaaa;*/
 }
 
@@ -274,10 +276,10 @@ div.meta
   padding-left: 0em;
   padding-bottom: 0.5em;
   display: inline;
-  color: #888;
+  color: $footer_color;
   font-size: 9pt;
   a {
-    color: #888;
+    color: $footer_color;
   }
 }
 .archive-month .tags
