@@ -1,7 +1,11 @@
 h1. Shadab's Enki Fork
 
-This is a fork version from git://github.com/xaviershay/enki.git . I have modified it to heroku-enable it. It now uses postgres instead of sqllite. Also added performance addons like memcacheand and newrelic. 
+This is a fork version from git://github.com/xaviershay/enki.git . I have made following changes:
+* Heroku-enable it. It now uses postgres instead of sqllite.
+* Added performance and analytics addons like memcacheand and newrelic.
+* Added bootstrap theme
+* Added disqus comments
 
-Another major change is the styling. I have used free styles provided by the awesome guys at "Bootstrap":http://twitter.github.com/bootstrap/ and "Thomas":https://github.com/thomas-mcdonald for the bootstrap-sass gem.
+I have used free styles provided by the awesome guys at "Bootstrap":http://twitter.github.com/bootstrap/ and "Thomas":https://github.com/thomas-mcdonald for the bootstrap-sass gem.
 
 Feel free to fork it and deploy it. Get some more information on how to use this fork at my "blog":http://shadabahmed.com
