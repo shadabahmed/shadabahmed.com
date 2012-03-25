@@ -1,0 +1,30 @@
+<h1>Your Content</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Body</th>
+      <th>Title</th>
+      <th>Created At</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% if @contents.empty? -%>
+      <tr><td colspan="5">There is no content at this time.</td></tr>
+    <% else -%>
+      <%= render :partial => 'content', :collection => @contents %>
+    <% end -%>
+  </tbody>
+
+  <tfoot>
+    <% if @contents.total_pages > 1 -%>
+      <tr class="pagination">
+        <td colspan="5">
+          <%= will_paginate(@contents, :previous_label => '« Newer', :next_label => 'Older »') %>
+        </td>
+      </tr>
+    <% end -%>
+  </tfoot>
+</table>

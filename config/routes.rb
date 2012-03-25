@@ -1,7 +1,8 @@
 Enki::Application.routes.draw do
+
   namespace :admin do
     resource :session
-
+    resources :contents
     resources :posts, :pages do
       post 'preview', :on => :collection
     end
@@ -15,20 +16,23 @@ Enki::Application.routes.draw do
     root :to => 'dashboard#show'
   end
 
-  resources :archives, :only => [:index]
-  resources :pages, :only => [:show]
-
-  constraints :year => /\d{4}/, :month => /\d{2}/, :day => /\d{2}/ do
-    get ':year/:month/:day/:slug/comments'  => 'comments#index'
-    post ':year/:month/:day/:slug/comments' => 'comments#create'
-    get ':year/:month/:day/:slug/comments/new' => 'comments#new'
-    get ':year/:month/:day/:slug' => 'posts#show'
+  scope 'blog', :defaults => {:scope => 'blog'} do
+    resources :archives, :only => [:index]
+    resources :pages, :only => [:show]
+    
+    constraints :year => /\d{4}/, :month => /\d{2}/, :day => /\d{2}/ do
+      get ':year/:month/:day/:slug/comments'  => 'comments#index'
+      post ':year/:month/:day/:slug/comments' => 'comments#create'
+      get ':year/:month/:day/:slug/comments/new' => 'comments#new'
+      get ':year/:month/:day/:slug' => 'posts#show'
+    end
+  
+    scope :to => 'posts#index' do
+      get 'posts.:format', :as => :formatted_posts
+      get '(:tag)', :as => :posts
+    end
+  
+    match '/' => 'posts#index', :as => 'posts_root'
   end
-
-  scope :to => 'posts#index' do
-    get 'posts.:format', :as => :formatted_posts
-    get '(:tag)', :as => :posts
-  end
-
-  root :to => 'posts#index'
+    root :to => 'main#index'
 end

@@ -5,17 +5,20 @@
       <ul class="nav">
         <% page_links_for_navigation.each do |link| -%>
             <li class="<%= 'active' if current_page?(link.url) %>"><%= link_to(link.name, link.url) %></li>
-         <% end -%>
-      </ul>
-      <ul class="nav">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories<b class="caret"></b></a>
+        <% end -%>
+        <li class="dropdown <%= 'active' if params[:scope] == 'blog' %>">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog<b class="caret"></b></a>
           <ul class="dropdown-menu">
+	    <li class="<%= 'active' if current_page?(posts_root_path)%>"><%= link_to('Blog Home', posts_root_path) %></li>
+            <li class="<%= 'active' if current_page?(archives_path)%>"><%= link_to('Blog Archive', archives_path) %></li>
+            <li class="divider"></li>
+            <li class="nav-header">Blog Categories</li>
             <% category_links_for_navigation.each do |link| -%>
-              <li><%= link_to(link.name, link.url) %></li>
+              <li class="<%= 'active' if current_page?(link.url)%>"><%= link_to(link.name, link.url) %></li>
             <% end -%>
           </ul>
         </li>
+        <li class=""><%= link_to("Curriculum Vitæ" , root_url + "pdfs/shadab-resume.pdf") %></li>
       </ul>
       <form method="get" id="sform" action="http://www.google.com/search" class="navbar-search pull-right">
         <div>

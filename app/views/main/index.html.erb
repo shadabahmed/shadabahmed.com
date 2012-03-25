@@ -1,0 +1,24 @@
+<div class="container">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <% if @contents[:main] and content = @contents[:main] %>
+          <h1><%= content.title %></h1>
+          <%= raw content.body%>
+        <% end %>
+      </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <% [:project1,:project2,:project3].each do |tag| %>
+          <% if @contents[tag] and content = @contents[tag]%>
+            <div class="span4">
+              <h2><%= content.title %></h2>
+              <%= raw content.body%>
+            </div>
+          <% end %>
+        <% end%>
+      </div>
+
+      <hr>
+    </div>

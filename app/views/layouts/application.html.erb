@@ -13,8 +13,7 @@
   <%= render 'shared/header' %>
   <div class="container">
     <div id="content">
-      <h1 id="page_heading"><a href="<%= root_url %>"><%= enki_config[:title] %></a></h1>
-      <div id="page_subtitle"><%= enki_config[:subtitle] %></div>
+      <%= yield :title_tag %>
       <div id="main">
         <%= yield %>
       </div>

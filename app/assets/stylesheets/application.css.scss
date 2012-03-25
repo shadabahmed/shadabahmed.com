@@ -17,8 +17,18 @@
 
 $footer_color: #888;
 
+// Active nav items
+.navbar .nav .dropdown.active > a, .navbar .nav .dropdown.active > a:hover {
+  color: $navbarLinkColorHover;
+  text-decoration: none;
+  background-color: $navbarBackground;
+}
+
+
+
 .navbar-search .search-query {
   background: #DDD;
+  border: none;
   color: black;
   ::-webkit-input-placeholder{
     color: black;

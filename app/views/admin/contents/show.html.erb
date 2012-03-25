@@ -1,0 +1,8 @@
+<h1>Editing content - <%= link_to(@content.key, admin_content_path(@content)) %></h1>
+
+<%= semantic_form_for([:admin, @content]) do |form| -%>
+  <%= render :partial => 'form', :locals => {:form => form} %>
+  <%= form.buttons do -%>
+    <%= form.commit_button("Save") -%>
+  <% end -%>
+<% end -%>
