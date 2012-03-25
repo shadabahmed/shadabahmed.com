@@ -1,6 +1,8 @@
 h1. Shadab's Enki Fork
 
 This is a fork version from git://github.com/xaviershay/enki.git . I have made following changes:
+* Blog entries have been moved to /blog scope. Also added a main controller for main pages. This makes it a full feature profile site than just bloggin engine.
+* Added a contents table. You can add custom HTML content through admin interface now. E.g. main page uses content with following keys -> main, project1, project2, project3
 * Heroku-enable it. It now uses postgres instead of sqllite.
 * Added performance and analytics addons like memcacheand and newrelic.
 * Added bootstrap theme
