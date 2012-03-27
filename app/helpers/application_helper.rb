@@ -17,4 +17,9 @@ module ApplicationHelper
       'base'   => error.last
     }[error.first.to_s]
   end
+
+  def google_analytics_tag
+    render 'shared/ga', :ga_id => (Rails.env.production? ? enki_config[:ga_id] : enki_config[:ga_id_development]),
+           :ga_host => (URI.parse(enki_config[:url]).host)
+  end
 end

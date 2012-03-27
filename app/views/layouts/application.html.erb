@@ -8,6 +8,7 @@
   <%= javascript_include_tag 'application' %>
   <%= open_id_delegation_link_tags(enki_config[:open_id_delegation, :server], enki_config[:open_id_delegation, :delegate]) if enki_config[:open_id_delegation] %>
   <%= yield(:head) %>
+  <%= google_analytics_tag %>
 </head>
 <body>
   <%= render 'shared/header' %>

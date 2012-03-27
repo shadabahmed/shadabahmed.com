@@ -9,3 +9,4 @@ db/schema.rb
 nbproject
 nbproject/**/*
 nbproject/*
+.idea
