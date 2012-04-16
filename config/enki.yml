@@ -12,9 +12,9 @@ author:
 # google analytics id
 ga_id: UA-30365293-1
 # google analytics id for development
-ga_id_development: UA-30365293-2
+ga_id_development: UA-30365293-4
 # Delete the following section if your site will not be acting as an OpenID delegate (http://wiki.openid.net/Delegation)
 # If you're deploying with mongrel, make sure you read http://rhnh.net/2008/04/13/nginx-openid-delegation-and-yadis
-#open_id_delegation:
+# :open_id_delegation:
 #  server:   http://www.myopenid.com/server
 #  delegate: http://username.myopenid.com
