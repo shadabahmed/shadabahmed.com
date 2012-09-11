@@ -14,6 +14,8 @@ class Post < ActiveRecord::Base
 
   validate                :validate_published_at_natural
 
+  validate                :markdown_type, :presence => true,  :inclusion => {:in => %w{ textile markdown }}
+
   def validate_published_at_natural
     errors.add("published_at_natural", "Unable to parse time") unless published?
   end
@@ -100,7 +102,7 @@ class Post < ActiveRecord::Base
   end
 
   def apply_filter
-    self.body_html = EnkiFormatter.format_as_xhtml(self.body)
+    self.body_html = EnkiFormatter.format_as_xhtml(self.body, self.markdown_type)
   end
 
   def set_dates

@@ -1,5 +1,5 @@
-<% content_for(:page_title) do -%>
-<%= post_title(@post) -%>
+<% content_for :page_title do -%>
+  <%= post_title @post -%>
 <% end -%>
 <%= render :partial => 'posts/post', :locals => {:post => @post, :show_comment_count => false} %>
 <%= disqus_comments @post %>

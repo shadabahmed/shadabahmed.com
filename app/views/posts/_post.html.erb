@@ -3,7 +3,7 @@
 %>
 <h2 class="entry_title"><%= link_to(post.title, post_path(post)) %></h2>
 <div class="entrybody">
-  <%=raw post.body_html %>
+  <%== post.body_html %>
 </div>
 <br/>
 <div class="social_links">
