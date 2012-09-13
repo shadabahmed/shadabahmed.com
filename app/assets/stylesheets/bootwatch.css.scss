@@ -8,15 +8,28 @@
 
 @font-face {
   font-family: 'Telex';
-  src: url('/assets/telex-regular-webfont.eot');
-  src: url('/assets/telex-regular-webfont.eot?#iefix') format('embedded-opentype'),
-  url('/assets/telex-regular-webfont.woff') format('woff'),
-  url('/assets/telex-regular-webfont.ttf') format('truetype'),
-  url('/assets/telex-regular-webfont.svg#telex_regularregular') format('svg');
+  src: local('Telex-Regular');
+  src: url('telex-regular-webfont.eot');
+  src: url('telex-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('telex-regular-webfont.woff') format('woff'),
+  url('telex-regular-webfont.ttf') format('truetype'),
+  url('telex-regular-webfont.svg#telex_regularregular') format('svg');
   font-weight: normal;
   font-style: normal;
-
 }
+
+@font-face {
+  font-family:"Bilbo";
+  src: local('Bilbo-Regular');
+  src: url('bilbo-regular.eot');
+  src: url('bilbo-regular.eot?#iefix') format('embedded-opentype'),
+       url('bilbo-regular.woff') format('woff'),
+       url('bilbo-regular.ttf') format('truetype'),
+       url('bilbo-regular.svg#bilbo-regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 // SCAFFOLDING
 // -----------------------------------------------------
 
