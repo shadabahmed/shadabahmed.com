@@ -14,7 +14,7 @@ group :assets do
 end
 
 platforms :ruby do
-  gem 'sqlite3'
+  #gem 'sqlite3'
   gem 'pg'
   gem 'dalli'
   gem 'newrelic_rpm'
