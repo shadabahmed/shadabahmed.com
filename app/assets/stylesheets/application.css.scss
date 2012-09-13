@@ -16,6 +16,14 @@
 @import "bootstrap";
 @import "bootwatch";
 
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover,
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF2FA4E7', endColorstr='#FF1A99E2', GradientType=0);
+}
+
 $footer_color: #888;
 
 // Active nav items
