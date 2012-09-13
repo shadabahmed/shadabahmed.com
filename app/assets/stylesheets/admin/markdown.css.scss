@@ -1,0 +1,67 @@
+#markdown{
+  display: none;
+}
+
+#facebox .popup .cheatsheet {
+  width: 800px;
+  overflow: hidden;
+}
+#facebox .popup .cheatsheet .col {
+  width: 260px;
+  margin-right: 10px;
+  float: left;
+  padding: 0 0 10px 0;
+}
+#facebox .popup .cheatsheet .col:last-child { margin: 0 }
+#facebox .popup .cheatsheet .mod { margin: 0 0 10px 0 }
+#facebox .popup .cheatsheet h3 { margin: 0 0 5px 0 }
+#facebox .popup .cheatsheet p {
+  margin: 0 0 5px 0;
+  color: #888;
+}
+#facebox .popup .cheatsheet pre {
+  margin: 0;
+  padding: 5px;
+  margin: 0 0 20px 0;
+  border: 1px solid #ddd;
+}
+
+#facebox pre {
+  padding: 5px 10px;
+  border: 1px solid #DDD;
+  border-bottom-color: #EEE;
+  border-right-color: #EEE;
+  background: #EEE;
+  border-radius: 3px;
+}
+
+#facebox h2 {
+  width: 100%;
+  margin: 0 0 10px -10px;
+  padding: 0 10px 10px 10px;
+  font-size: 16px;
+  border-bottom: 1px solid #DDD !important;
+}
+
+#facebox .rule {
+  width: 100%;
+  padding: 0 10px;
+  margin-left: -10px;
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #DDD;
+}
+
+#facebox .popup .cheatsheet p {
+  margin: 0 0 5px 0;
+  color: #888;
+}
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}

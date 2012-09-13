@@ -38,8 +38,12 @@
         <li class="separator">&nbsp;</li>
         <li><%= link_to("Logout", admin_session_path, :accesskey => 'l', :method => :delete) %></li>
         <li><%= link_to("View Site", '/',             :accesskey => 'v', :title => 'View Site') %></li>
+        <li style="float:right">
+          <a href="#markdown" id="markdown_hint">Markdown Hint</a>
+        </li>
       </ul>
     </div>
   </div>
+  <%= render 'shared/admin/markdown' %>
 </body>
 </html>

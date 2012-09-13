@@ -8,17 +8,17 @@ gem 'rails', '3.2.8'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-  gem 'uglifier', '>= 1.0.3'
+  gem 'sass-rails'
+  gem 'coffee-rails'
+  gem 'uglifier'
 end
 
 platforms :ruby do
-  #gem 'sqlite3'
+  gem 'sqlite3'
   gem 'pg'
   gem 'dalli'
   gem 'newrelic_rpm'
-  gem "bootstrap-sass", "~> 2.0.1"
+  gem "bootstrap-sass"
 end
 
 platforms :jruby do
@@ -66,4 +66,5 @@ end
 
 group :development, :test do
   gem 'rspec-rails'
+  gem 'thin'
 end
