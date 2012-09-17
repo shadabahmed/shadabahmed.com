@@ -11,3 +11,4 @@ nbproject/**/*
 nbproject/*
 .idea
 .rbenv-version
+.DS_STORE
