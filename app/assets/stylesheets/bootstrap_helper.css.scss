@@ -1,0 +1,42 @@
+/* High level containers */
+@import "bootstrap/_variables.css.scss";
+@import "bootstrap";
+@import "bootstrap/bootwatch.css.scss";
+
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover,
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF2FA4E7', endColorstr='#FF1A99E2', GradientType=0);
+}
+
+// Active nav items
+.navbar .nav .dropdown.active > a, .navbar .nav .dropdown.active > a:hover {
+  color: $navbarLinkColorHover;
+  text-decoration: none;
+  background-color: $navbarBackground;
+}
+
+.navbar-search .search-query {
+  background: #DDD;
+  border: none;
+  color: black;
+  ::-webkit-input-placeholder{
+    color: black;
+  }
+  :-moz-placeholder{
+    color: black;
+  }
+  &:hover{
+    color: black;
+    background-color: #f0f0f0;
+    //background-color: rgba(255, 255, 255, 0.5);
+  }
+  &:focus
+    {
+    color: black;
+    background-color: #fff;
+  }
+}
+

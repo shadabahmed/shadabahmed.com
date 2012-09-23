@@ -1,0 +1,136 @@
+.post {
+  background-color: white;
+  border: 1px solid #AAA;
+  padding: 20px 50px;
+  max-width: 750px;
+  margin: 0px auto;
+  position: relative;
+  margin-bottom: 40px;
+
+  div.meta
+  {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .social_links_wrapper {
+    background: white;
+    text-align: center;
+    .social_links{
+      display: inline-block;
+      margin: 10px 5px;
+      > div
+        {
+        height: 20px !important;
+      }
+    }
+  }
+
+}
+
+div.disqus_comment_count {
+  font-size: 10px;
+  float: right;
+}
+
+
+.entry_title {
+  margin-bottom: 25px;
+  clear: both;
+  h2{
+    font-size: 2.3em;
+    text-align: center;
+    font-weight: normal;
+    a, a:hover, a:visited {
+      color: #000 !important;
+      text-decoration: none;
+    }
+    margin-top: 0px;
+  }
+
+  .date.ribbon {
+    float: left;
+  }
+  .date {
+    float: left;
+    left: 0px;
+    margin: 0px 5px 5px 0px;
+    position: relative;
+    top: 5px;
+  }
+  a.ribbon, a.ribbon:visited {
+    color: #EEE;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .ribbon {
+    color: #EEE;
+    cursor: default;
+    display: inline-block;
+    text-align: center;
+    width: 35px;
+    .top {
+      border-bottom: solid 1px rgba(255, 255, 255, 0.6);
+      -moz-border-radius: 1px 1px 0px 0px;
+      -ms-border-radius: 1px 1px 0px 0px;
+      -o-border-radius: 1px 1px 0px 0px;
+      -webkit-border-radius: 1px 1px 0px 0px;
+      border-radius: 1px 1px 0px 0px;
+      font-size: 11px;
+      #padding: 4px 0;
+      position: relative;
+      text-transform: uppercase;
+    }
+    &:hover .ribbon-piece {
+      background-color: #AD3A2B;
+    }
+    .ribbon-piece {
+      background-color: rgba(102, 102, 102, 1);
+      -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      -ms-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      -o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      -moz-transition: background-color 0.5s ease-in;
+      -ms-transition: background-color 0.5s ease-in;
+      -o-transition: background-color 0.5s ease-in;
+      -webkit-transition: background-color 0.5s ease-in;
+      transition: background-color 0.5s ease-in;
+    }
+    .bottom {
+      font-size: 17px;
+      #padding: 5px 0;
+    }
+
+    .tail {
+      height: 10px;
+      overflow: hidden;
+      position: relative;
+      .left, .right {
+        height: 10px;
+        position: absolute;
+        top: -10px;
+        width: 50px;
+      }
+      .left {
+        left: -9px;
+        -moz-transform: rotate(-25deg);
+        -ms-transform: rotate(-25deg);
+        -o-transform: rotate(-25deg);
+        -webkit-transform: rotate(-25deg);
+        transform: rotate(-25deg);
+      }
+      .right {
+        right: -9px;
+        -moz-transform: rotate(25deg);
+        -ms-transform: rotate(25deg);
+        -o-transform: rotate(25deg);
+        -webkit-transform: rotate(25deg);
+        transform: rotate(25deg);
+      }
+    }
+  }
+
+
+}
