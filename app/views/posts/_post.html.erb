@@ -1,24 +1,33 @@
-<%
-  show_comment_count ||= true
-%>
-<h2 class="entry_title"><%= link_to(post.title, post_path(post)) %></h2>
-<div class="entrybody">
-  <%== post.body_html %>
+<div class="post shadow" id="<%= dom_id(post) %>">
+  <%
+     show_comment_count = true if show_comment_count.nil?
+  %>
+  <div class="entry_title">
+    <%= render 'shared/post_date', :post_date => post.published_at %>
+    <h2>
+      <%= link_to(post.title, post_path(post)) %>
+    </h2>
+  </div>
+  <div class="entrybody">
+    <%== post.body_html %>
+  </div>
+  <br/>
+  <div class="social_links_wrapper">
+    <div class="social_links">
+      <%= google_plus(post_path(post, :only_path => false).to_s) %>
+      <%= twitter(post_path(post, :only_path => false).to_s) %>
+      <%= facebook_like(post_path(post, :only_path => false).to_s) %>
+    </div>
+  </div>
+  <div class="meta">
+    <ul>
+      <li class="date">Posted on <%= format_post_date(post.published_at) %></li>
+      <% if show_comment_count %>
+          <li class="comments"><%= disqus_comment_count post %></li>
+      <% end %>
+      <% unless post.tags.empty? -%>
+          <li class="tags">Tagged <%= linked_tag_list(post.tags) %></li>
+      <% end -%>
+    </ul>
+  </div>
 </div>
-<br/>
-<div class="social_links">
-  <%= facebook_like(post_path(post, :only_path => false).to_s) %>
-  <%= google_plus(post_path(post, :only_path => false).to_s) %>
-</div>
-<div class="meta">
-  <ul>
-    <li class="date">Posted on <%= format_post_date(post.published_at) %></li>
-    <% if show_comment_count %>
-      <li class="comments"><%= disqus_comment_count post %></li>
-    <% end %>
-    <% unless post.tags.empty? -%>
-    	<li class="tags">Tagged <%= linked_tag_list(post.tags) %></li>
-    <% end -%>
-  </ul>
-</div>
-

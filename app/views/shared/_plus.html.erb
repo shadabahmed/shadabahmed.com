@@ -1,14 +1,14 @@
-<!-- Place this tag where you want the +1 button to render -->
-<div class="g-plusone" data-size="small" data-annotation="inline" data-width="175" data-href="<%= url %>"></div>
+<!-- Place this tag where you want the share button to render. -->
+<div class="g-plusone" data-size="medium" data-href="<%= url %>"></div>
 
-<!-- Place this render call where appropriate -->
-<% unless @google_plus_added 
+<% unless @google_plus_added
    @google_plus_added = true %>
-<script type="text/javascript">
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/plusone.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
-</script>
+    <!-- Place this tag after the last share tag. -->
+    <script type="text/javascript">
+        (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+        })();
+    </script>
 <% end %>

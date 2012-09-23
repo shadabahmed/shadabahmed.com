@@ -1,0 +1,8 @@
+<%= link_to archives_path, :class => 'ribbon date', :title => "#{time_ago_in_words(post_date)} ago" , :itemprop => 'url' do %>
+  <div class="top ribbon-piece"><%= post_date.strftime('%b') %></div>
+  <div class="bottom ribbon-piece"><%= post_date.strftime('%d') %></div>
+  <div class="tail">
+    <div class="left ribbon-piece"></div>
+    <div class="right ribbon-piece"></div>
+  </div>
+<% end %>

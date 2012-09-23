@@ -12,6 +12,10 @@ module PostsHelper
   def google_plus(url)
     render 'shared/plus', :url => url
   end
+
+  def twitter(url)
+    render 'shared/twitter', :url => url
+  end
 	
   def disqus_comment_count(post)
     raw "<a href=\"#{post_path(post, :only_path => false)}#disqus_thread\" data-disqus-identifier=\"#{post.slug}\"></a>"

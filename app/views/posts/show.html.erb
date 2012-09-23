@@ -1,7 +1,7 @@
 <% content_for :page_title do -%>
   <%= post_title @post -%>
 <% end -%>
-<%= render :partial => 'posts/post', :locals => {:post => @post, :show_comment_count => false} %>
+<%= render 'post', :post => @post, :show_comment_count => false %>
 <%= disqus_comments @post %>
 <%= render 'shared/disqus_index' %>
 <div class="related">Looking for more? Head on over to the <%= link_to("archives", archives_path) %>.</div>
