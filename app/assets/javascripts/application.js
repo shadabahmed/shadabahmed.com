@@ -16,5 +16,7 @@
 //= require live-comment-preview
 //= require_self
 // Loads all Bootstrap javascripts
+//= require ./admin/facebox
 //= require bootstrap
+
 

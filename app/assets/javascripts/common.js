@@ -25,3 +25,14 @@ jQuery.ajaxSetup({
 jQuery.prototype.any = function(callback) {
   return (this.filter(callback).length > 0)
 }
+
+$(function(){
+    $('img.magnifier').each(function(){
+        var $this = $(this);
+        $this.wrap('<a class="magnifier">');
+        $this.parent('a.magnifier').click(function(e){
+            e.preventDefault();
+            $.facebox('<h2>' + $this.attr('title') + '</h2><img src="' + $this.attr('src') + '"/>');
+        });
+    });
+});
