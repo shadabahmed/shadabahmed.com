@@ -9,6 +9,7 @@
   <%= open_id_delegation_link_tags(enki_config[:open_id_delegation, :server], enki_config[:open_id_delegation, :delegate]) if enki_config[:open_id_delegation] %>
   <%= yield(:head) %>
   <%= favicon_link_tag %>
+  <%= google_analytics_tag %>
 </head>
 <body>
   <%= render 'shared/header' %>
@@ -47,6 +48,5 @@
       <div id="footer"><%= enki_config[:title] %> &#169; <%= enki_config[:author, :name] %>. Valid <a href="http://validator.w3.org/check?uri=referer">HTML5</a> and <%= link_to "ATOM", "http://feedvalidator.org/check.cgi?url=#{enki_config[:url]}/blog/posts.atom" %>. Powered by <a href="https://github.com/shadabahmed/enki" title="Shadab's Enki fork at Github">Shadab's Enki Fork</a>.</div>
     </div>
   </div>
-  <%= google_analytics_tag %>
 </body>
 </html>
