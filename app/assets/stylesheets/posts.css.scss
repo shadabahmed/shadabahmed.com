@@ -14,6 +14,17 @@
   }
 
   .social_links_wrapper {
+    .hn_wrapper{
+      float: left;
+      margin: 10px 5px;
+      > div
+      {
+        height: 20px !important;
+      }
+      &:after{
+        clear: both;
+      }
+    }
     background: white;
     text-align: center;
     .social_links{

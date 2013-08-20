@@ -1,5 +1,5 @@
 class Post < ActiveRecord::Base
-  DEFAULT_LIMIT = 15
+  DEFAULT_LIMIT = 5
 
   acts_as_taggable
 

@@ -4,7 +4,11 @@ module PostsHelper
   def more_content?
     @posts.size == Post::DEFAULT_LIMIT
   end
-  
+
+  def hn_like(post)
+    render 'shared/hn_like', :url => post_path(post, :only_path => false).to_s, :title => post.title
+  end
+
   def facebook_like(url)
     render 'shared/facebook_like', :url => url
   end
